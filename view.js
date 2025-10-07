@@ -16,19 +16,9 @@ function generateTr(todo) {
   return elTr
 }
 
-// const address = {
-//   country: 'France',
-//   city: 'Paris',
-//   street: 'napaleon',
-//   house: '7',
-// }
-
-// for (const prop in address) {
-//   console.log(prop)
-//   console.log(typeof prop)
-//   console.log(address.country)
-//   console.log(address['country'])
-// }
+function onClickButton() {
+  handleAddInfo()
+}
 
 function renderTbody(todos) {
   const elTbody = document.querySelector('tbody')
@@ -38,3 +28,6 @@ function renderTbody(todos) {
     elTbody.appendChild(elTr)
   }
 }
+
+const elButton = document.querySelector('button')
+elButton.onclick = onClickButton
