@@ -4,30 +4,65 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <style>
+      html {
+        font-family: sans-serif;
+        font-size: 18px;
+        color: #234;
+      }
+      body {
+        background-color: cornflowerblue;
+      }
+      table {
+        background-color: aliceblue;
+        padding: 5px;
+        border-radius: 7px;
+      }
+      td {
+        border: 1px solid #234;
+        background-color: azure;
+        padding: 15px;
+        /* border-radius: 15px; */
+        box-shadow: 0 0 5px 0 #2345;
+      }
+    </style>
   </head>
   <body>
-    <!-- table>(thead>tr>th{$$$$$}*5)+(tbody>(tr>(th{$})+(td{$$$}*4))*12) -->
-    <table>
-      <thead>
-        <tr>
-          <th>id</th>
-          <th>userId</th>
-          <th>title</th>
-          <th>completed</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td></td>
-          <td></td>
-          <td></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
-    <button>Create</button>
+    <div class="main">
+      <table cellspacing="0">
+        <thead>
+          <tr>
+            <th>id</th>
+            <th>userId</th>
+            <th>title</th>
+            <th>completed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>id</td>
+            <td>userId</td>
+            <td>title</td>
+            <td>completed</td>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>userId</td>
+            <td>title</td>
+            <td>completed</td>
+          </tr>
+          <tr>
+            <td>id</td>
+            <td>userId</td>
+            <td>title</td>
+            <td>completed</td>
+          </tr>
+        </tbody>
+      </table>
+      <button id="elButtonGetTodos">Get todos</button>
+    </div>
+    <script src="/js/model.js"></script>
+    <script src="/js/view.js"></script>
+    <script src="/js/controller.js"></script>
   </body>
-  <script src="view.js"></script>
-  <script src="model.js"></script>
-  <script src="controller.js"></script>
 </html>

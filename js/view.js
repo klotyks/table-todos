@@ -1,4 +1,5 @@
-function generateTr(todo) {
+// генерируем оформление для тудушки
+function generateTrTodo(todo) {
   const elTr = document.createElement('tr')
   const elTd1 = document.createElement('td')
   const elTd2 = document.createElement('td')
@@ -12,22 +13,17 @@ function generateTr(todo) {
   elTr.appendChild(elTd2)
   elTr.appendChild(elTd3)
   elTr.appendChild(elTd4)
-
   return elTr
 }
 
-function onClickButton() {
-  handleAddInfo()
+function onClickButtonGetTodos() {
+  handleGetTodos()
 }
 
 function renderTbody(todos) {
   const elTbody = document.querySelector('tbody')
   elTbody.innerHTML = ''
-  for (const todo of todos) {
-    const elTr = generateTr(todo)
-    elTbody.appendChild(elTr)
-  }
+  todos.forEach(todo => elTbody.appendChild(generateTrTodo(todo)))
 }
 
-const elButton = document.querySelector('button')
-elButton.onclick = onClickButton
+elButtonGetTodos.onclick = onClickButtonGetTodos

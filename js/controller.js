@@ -1,4 +1,4 @@
-async function handleAddInfo() {
+async function handleGetTodos() {
   const newTodos = await sendRequest()
   setTodos(newTodos)
   renderTbody(todos)

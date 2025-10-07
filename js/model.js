@@ -1,3 +1,6 @@
+// create : создаёшь объектик
+// add   : добавляешь уже созданный объектик в массивный объект
+
 let todos = []
 
 async function sendRequest() {
