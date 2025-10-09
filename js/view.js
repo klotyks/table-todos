@@ -1,4 +1,3 @@
-// генерируем оформление для тудушки
 function generateTrTodo(todo) {
   const elTr = document.createElement('tr')
   const elTd1 = document.createElement('td')
