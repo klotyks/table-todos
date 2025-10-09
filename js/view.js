@@ -19,7 +19,7 @@ function onClickButtonGetTodos() {
   handleGetTodos()
 }
 
-function renderTbody(todos) {
+function renderTBodyTodos(todos) {
   const elTbody = document.querySelector('tbody')
   elTbody.innerHTML = ''
   todos.forEach(todo => elTbody.appendChild(generateTrTodo(todo)))
