@@ -15,6 +15,10 @@ function generateTrTodo(todo) {
   return elTr
 }
 
+function generateTrComment(comment) {
+  // body
+}
+
 function onClickButtonGetTodos() {
   handleGetTodos()
 }
