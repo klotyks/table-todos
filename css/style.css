@@ -1,0 +1,20 @@
+html {
+  font-family: sans-serif;
+  font-size: 18px;
+  color: #234;
+}
+body {
+  background-color: cornflowerblue;
+}
+table {
+  background-color: aliceblue;
+  padding: 5px;
+  border-radius: 7px;
+}
+td {
+  border: 1px solid #234;
+  background-color: azure;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px 0 #2345;
+}
